@@ -1,0 +1,29 @@
+<?php
+
+// Solicita ao usuário que insira dois números e a operação desejada
+$numero1 = readline("Insira o primeiro número: ");
+$numero2 = readline("Insira o segundo número: ");
+$operacao = readline("Insira a operação desejada (+, -, *, /): ");
+
+// Verifica qual operação será realizada
+if ($operacao == "+") {
+  $resultado = $numero1 + $numero2;
+  echo "O resultado da soma é: " . $resultado;
+} elseif ($operacao == "-") {
+  $resultado = $numero1 - $numero2;
+  echo "O resultado da subtração é: " . $resultado;
+} elseif ($operacao == "*") {
+  $resultado = $numero1 * $numero2;
+  echo "O resultado da multiplicação é: " . $resultado;
+} elseif ($operacao == "/") {
+  if ($numero2 != 0) { // Verifica se o divisor é diferente de zero
+    $resultado = $numero1 / $numero2;
+    echo "O resultado da divisão é: " . $resultado;
+  } else {
+    echo "Erro: Divisão por zero.";
+  }
+} else {
+  echo "Operação inválida.";
+}
+
+?>
