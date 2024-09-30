@@ -1,0 +1,12 @@
+php
+<?php
+// Solicita ao usuário que insira um número
+$numero = readline("Insira um número: ");
+
+// Verifica se o número é divisível por 2
+if ($numero % 2 == 0) {
+  echo "O número é divisível por 2.";
+} else {
+  echo "O número não é divisível por 2.";
+}
+?>
