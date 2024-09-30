@@ -1,0 +1,12 @@
+php
+<?php
+// Solicita ao usuário que insira sua idade
+$idade = readline("Insira sua idade: ");
+
+// Verifica se o usuário tem 18 anos ou mais
+if ($idade >= 18) {
+  echo "Você tem 18 anos ou mais.";
+} else {
+  echo "Você é menor de 18 anos.";
+}
+?>
