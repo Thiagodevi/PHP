@@ -1,0 +1,15 @@
+php
+<?php
+// Solicita ao usuário que insira dois números
+$numero1 = readline("Insira o primeiro número: ");
+$numero2 = readline("Insira o segundo número: ");
+
+// Verifica qual número é maior
+if ($numero1 > $numero2) {
+  echo "O primeiro número ({$numero1}) é maior que o segundo número ({$numero2}).";
+} elseif ($numero2 > $numero1) {
+  echo "O segundo número ({$numero2}) é maior que o primeiro número ({$numero1}).";
+} else {
+  echo "Os dois números são iguais.";
+}
+?>
