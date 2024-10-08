@@ -1,0 +1,35 @@
+<?php
+/*
+    Exercício 5: Calculadora simples
+    Crie um script que peça ao usuário dois números e uma operação (adição, subtração, multiplicação ou divisão) e faça o cálculo baseado na operação fornecida.
+    Instruções:
+    Capture dois números e a operação desejada do usuário.
+    Use if/else para determinar qual operação será realizada.
+*/
+ 
+ 
+$num1 = 10;
+$num2 = 0.1;
+$operacao = "adição";
+$resultado = 0;
+$simbolo = "";
+ 
+if($operacao == "adição") {
+    $simbolo = '+';
+    $resultado = $num1 + $num2;
+} else if($operacao == "subtração") {
+    $simbolo = '-';
+    $resultado = $num1 - $num2;
+} else if($operacao == "multiplicação") {
+    $simbolo = 'x';
+    $resultado = $num1 * $num2;
+} else if($operacao == "divisão") {
+    $simbolo = '/';
+    if($num2 != 0) {
+        $resultado = $num1 / $num2;
+    } else {
+        $resultado = 'número invalido';
+    }
+}
+ 
+echo $num1 . ' ' . $simbolo . ' ' . $num2 . ' = ' . $resultado;
